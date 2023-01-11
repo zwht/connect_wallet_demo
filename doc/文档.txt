@@ -1,0 +1,18 @@
+
+
+
+ssh -i /Users/weizhao/zw/projects/bigData/open-ocean/demo/connect_wallet_demo/test.pem ec2-user@ec2-18-207-189-128.compute-1.amazonaws.com
+
+
+外网面板地址: https://18.207.189.128:41503/e41dcfdf
+内网面板地址: https://172.31.92.106:41503/e41dcfdf
+username: nxfil12x
+password: 9a992e06
+
+13540416116
+Zw200813
+
+
+宝塔安装命令：
+wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh ed8484bec
+
