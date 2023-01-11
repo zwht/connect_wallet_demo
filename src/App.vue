@@ -273,14 +273,14 @@ export default {
       let chain_info = chainObj[chainId];
       try {
         if (!(window.ethereum || (Web3 && Web3.givenProvider) || window.safepal_wallet_app)) {
-          throw new Error(EnumErrors.NotMetamask);
+          throw new Error('chainId', chainId);
         }
         this.sdk = new Web3(Web3.givenProvider || window.ethereum || window.safepal_wallet_app)
         // this.sdk = new Web3(window.ethereum);
         const [address] = await this.sdk.eth.requestAccounts();
         const currentChainId = await this.sdk.eth.getChainId();
         if (chainId && currentChainId !== chainId) {
-          throw new Error(EnumErrors.ChainIdNotMath);
+          throw new Error('EnumErrors.ChainIdNotMath');
         }
         this.address = address;
         this.chainId = currentChainId;
